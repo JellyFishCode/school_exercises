@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-intmain()
+int main()
 {
     // defining variables
     int year;
@@ -12,7 +12,7 @@ intmain()
 
     //input & output
     cout << "Enter the year to be calculated: ";
-    cin >> " year"
+    cin >> year;
 
     if (year % 4 == 0){
         message = " is a leap year.";
@@ -25,7 +25,7 @@ intmain()
             }
         }
     }
-    
+
     cout << year << message << endl << endl;
 
     cout << endl << "Program end";
