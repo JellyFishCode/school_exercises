@@ -8,10 +8,12 @@ intmain()
     // defining variables
     int year;
     char choice;
-    char Y;
     string message = " is not a leap year.";
 
     //input & output
+    cout << "Enter the year to be calculated: ";
+    cin >> " year"
+
     if (year % 4 == 0){
         message = " is a leap year.";
 
@@ -23,18 +25,11 @@ intmain()
             }
         }
     }
+    
     cout << year << message << endl << endl;
 
-    // repeat
-    cout << "Do you want to check another year? > (Y/N)";
-    cin >> repeat;
-    
-    if (repeat == "Y"){
-        return 1;
-    }
-    else{
-        cout << endl << "Program end";
-    }
+    cout << endl << "Program end";
+
 
 
     return 0;
